@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>공차 알바 체험 게임</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="game-header">
+        <p class="eyebrow">GONG CHA PART-TIME SIMULATOR</p>
+        <h1>공차 알바 체험 게임</h1>
+      </header>
+
+      <section class="game-layout" aria-label="게임 화면">
+        <section class="panel order-panel" aria-label="주문 영역">
+          <h2>주문</h2>
+          <p>손님의 주문이 이곳에 표시됩니다.</p>
+        </section>
+
+        <section class="counter-panel" aria-label="제조 영역">
+          <div id="game-canvas" aria-label="음료 제조 카운터"></div>
+          <p>음료를 제조하는 카운터입니다.</p>
+        </section>
+
+        <section class="panel status-panel" aria-label="정보 영역">
+          <h2>매장 현황</h2>
+          <p>수익, 성장, 직급 정보가 이곳에 표시됩니다.</p>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

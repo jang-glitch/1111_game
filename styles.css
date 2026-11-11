@@ -1,0 +1,120 @@
+:root {
+  color: #2d2034;
+  background: #fff6ec;
+  font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.game-shell {
+  width: min(100%, 960px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: clamp(10px, 2vw, 20px);
+}
+
+.game-header {
+  margin-bottom: 16px;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  color: #9d4d6c;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+.game-layout {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.8fr) minmax(300px, 1.8fr) minmax(150px, 0.8fr);
+  gap: 12px;
+  align-items: stretch;
+}
+
+.panel,
+.counter-panel {
+  border: 2px solid #3b2940;
+  border-radius: 16px;
+  background: #fffdf9;
+  box-shadow: 4px 4px 0 #3b2940;
+}
+
+.panel {
+  min-height: 280px;
+  padding: 16px;
+}
+
+h2 {
+  color: #8a3658;
+  font-size: 1.1rem;
+}
+
+.panel p,
+.counter-panel > p {
+  color: #746979;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.counter-panel {
+  min-height: 310px;
+  overflow: hidden;
+  padding: 12px;
+}
+
+#game-canvas {
+  min-height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.counter-panel > p {
+  margin: 10px 4px 0;
+}
+
+canvas {
+  display: block;
+}
+
+@media (max-height: 480px) {
+  .game-shell {
+    padding: 10px 14px;
+  }
+
+  .game-header {
+    margin-bottom: 8px;
+  }
+
+  .panel {
+    min-height: 250px;
+    padding: 12px;
+  }
+
+  .counter-panel {
+    min-height: 270px;
+    padding: 10px;
+  }
+
+  #game-canvas {
+    min-height: 210px;
+  }
+}
