@@ -8,9 +8,10 @@ const config = {
   backgroundColor: "#f6d6c9",
   scene: [StartScene, GameScene, ResultScene],
   scale: {
-    mode: Phaser.Scale.RESIZE,
-    width: 800,
-    height: 330,
+    mode: Phaser.Scale.FIT,
+    autoCenter: Phaser.Scale.CENTER_BOTH,
+    width: 1280,
+    height: 720,
   },
 };
 
